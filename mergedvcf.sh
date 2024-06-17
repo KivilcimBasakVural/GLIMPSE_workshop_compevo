@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#SBATCH -p bonobo
-#SBATCH -n 4
+#SBATCH -p chimp
+#SBATCH -n 1
 #SBATCH -t 5-00:00:00
-#SBATCH -J filter
+#SBATCH -J mergedvcf
 #SBATCH -o slurm-%j-%N-%u.out
 #SBATCH -e slurm-%J-%N-%u.err
 
