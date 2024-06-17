@@ -2,7 +2,7 @@
 #SBATCH -p chimp
 #SBATCH -n 8
 #SBATCH -t 5-00:00:00
-#SBATCH -J dip
+#SBATCH -J diploid
 #SBATCH -o slurm-%j-%N-%u.out
 #SBATCH -e slurm-%J-%N-%u.err
 
