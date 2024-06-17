@@ -2,7 +2,7 @@
 #SBATCH -p chimp
 #SBATCH -n 4
 #SBATCH -t 5-00:00:00
-#SBATCH -J imputation1
+#SBATCH -J refpanel
 #SBATCH -o slurm-%j-%N-%u.out
 #SBATCH -e slurm-%J-%N-%u.err
 
