@@ -1,1 +1,1 @@
-This project was created for COMPEVO population genetics workshop. Therefore, some running codes were updated for COMPEVO server.
+This project was created for 	@CompEvoMetu population genetics workshop. Therefore, some running codes were updated for @CompEvoMetu server.
