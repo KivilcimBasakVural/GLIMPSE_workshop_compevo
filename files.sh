@@ -1,3 +1,4 @@
+#!/bin/bash
 for bam in $(cat bamlist);do sample="$( cut -d "_" -f1 <<< "${bam}" )"; samplename=${sample##*/}; echo "$samplename";done >list
 for i in $(cat list);do mkdir ${i};done
 for i in $(cat list);do mkdir ${i}/${i}_bam;done
