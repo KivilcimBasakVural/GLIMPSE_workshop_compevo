@@ -1,4 +1,4 @@
-#SBATCH -p chimp
+#SBATCH -p gibbon
 #SBATCH -n 1
 #SBATCH -t 5-00:00:00
 #SBATCH -J ligate
@@ -7,7 +7,6 @@
 
 
 bcftools=/usr/local/sw/bcftools-1.18/bcftools
-tabix=/usr/local/sw/bcftools-1.18/htslib-1.18/tabix
 ligate=/usr/local/sw/GLIMPSE/tutorial/bin/GLIMPSE2_ligate
 
 bam=$1
