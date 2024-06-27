@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -p chimp
+#SBATCH -p gibbon
 #SBATCH -n 8
 #SBATCH -t 5-00:00:00
 #SBATCH -J imput
