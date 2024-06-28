@@ -15,7 +15,7 @@ bcftools=/usr/local/sw/bcftools-1.18/bcftools
 
 for chr in {1..22}
 do
-        BAM=${samplename}/${samplename}_bam/${filebase}_chr${chr}.bam
+        BAM=/mnt/NEOGENE1/toTransfer/workshopfiles/imputation/${samplename}/${samplename}_bam/${filebase}_chr${chr}.bam
         REFGEN=/mnt/NEOGENE3/share/ref/genomes/hsa/chr/hs37d5.chr${chr}.fa
         VCF=/mnt/NEOGENE3/share/dna/hsa/genotypes/1000G_20130502/reference_panel/1000GP.chr${chr}.sites.vcf.gz
         TSV=/mnt/NEOGENE3/share/dna/hsa/genotypes/1000G_20130502/reference_panel/1000GP.chr${chr}.sites.tsv.gz
