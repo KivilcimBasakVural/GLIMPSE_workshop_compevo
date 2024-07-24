@@ -21,6 +21,6 @@ do
         TSV=/mnt/NEOGENE3/share/dna/hsa/genotypes/1000G_20130502/reference_panel/1000GP.chr${chr}.sites.tsv.gz
         OUT=${samplename}/${samplename}_vcf/${filebase}_chr${chr}.vcf.gz
 
-        ${bcftools} mpileup -f ${REFGEN} -I -E -a 'FORMAT/DP' -T ${VCF} -r ${chr} -q 30 -Q 30 --threads 8 ${BAM} -Ou | ${bcftools} call -Aim -C alleles -T ${TSV} -Oz -o ${OUT}
+        ${bcftools} mpileup -f ${REFGEN} -I -E -a 'FORMAT/DP' -T ${VCF} -r ${chr} -q 30 -Q 30 --threads 8 ${BAM} -Ou | ${bcftools} call -Aim -C alleles -T ${TSV} --threads 8 -Oz -o ${OUT}
         ${bcftools} index -f ${OUT}
 done
